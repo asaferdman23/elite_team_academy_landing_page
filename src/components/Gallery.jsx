@@ -92,6 +92,7 @@ const Gallery = () => {
               <img
                 src={image.src}
                 alt={image.alt}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
 

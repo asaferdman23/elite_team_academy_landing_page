@@ -131,10 +131,10 @@ const RegistrationForm = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-6">
-            הזמינו את <span className="text-gold-500">האימון החינמי</span> שלכם
+            להזמנת <span className="text-gold-500">אימון ניסיון</span> חינם
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            מלאו את הטופס למטה ואנחנו ניצור איתכם קשר לתיאום אימון הניסיון החינמי של הילד שלכם.
+            מלאו את הטופס למטה ואנחנו ניצור איתכם קשר לתיאום אימון הניסיון של השחקן שלכם.
           </p>
         </div>
 

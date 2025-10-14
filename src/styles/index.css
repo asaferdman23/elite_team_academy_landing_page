@@ -10,6 +10,17 @@
   body {
     @apply antialiased;
   }
+
+  /* Performance optimizations */
+  img {
+    will-change: transform;
+    transform: translateZ(0);
+  }
+
+  video {
+    will-change: transform;
+    transform: translateZ(0);
+  }
 }
 
 @layer utilities {

@@ -9,7 +9,7 @@ const CTA = () => {
     offset: ['start end', 'end start']
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '15%'])
 
   return (
     <section
@@ -57,10 +57,7 @@ const CTA = () => {
 
         {/* Decorative elements */}
         <div className="mt-12 flex justify-center gap-8 text-white/80">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-gold-500">+15</div>
-            <div className="text-sm">שנות ניסיון</div>
-          </div>
+
           <div className="text-center">
             <div className="text-3xl font-bold text-gold-500">+500</div>
             <div className="text-sm">ספורטאים אומנו</div>

@@ -9,7 +9,7 @@ const Hero = ({ onVideoModalOpen }) => {
     offset: ['start start', 'end start']
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '20%'])
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   return (
