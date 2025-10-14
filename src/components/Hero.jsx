@@ -26,8 +26,7 @@ const Hero = ({ onVideoModalOpen }) => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/assets/hero-video.mp4" type="video/mp4" />
-          <source src="/assets/movie_hero.MOV" type="video/quicktime" />
+          <source src="https://res.cloudinary.com/ddg685nfx/video/upload/v1760468907/hero-video_ruoigv.mp4" type="video/mp4" />
           {/* Fallback image if video doesn't load */}
           <img src="/assets/team.JPEG" alt="Elite Team Academy" className="absolute inset-0 w-full h-full object-cover" />
         </video>
