@@ -14,17 +14,23 @@ const Hero = ({ onVideoModalOpen }) => {
 
   return (
     <section id="hero" ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with parallax */}
+      {/* Video Background with parallax */}
       <motion.div
         style={{ y }}
         className="absolute inset-0 z-0"
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(/assets/team.JPEG)',
-          }}
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/assets/hero-video.mp4" type="video/mp4" />
+          <source src="/assets/movie_hero.MOV" type="video/quicktime" />
+          {/* Fallback image if video doesn't load */}
+          <img src="/assets/team.JPEG" alt="Elite Team Academy" className="absolute inset-0 w-full h-full object-cover" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-navy-900/80 via-navy-900/70 to-navy-900" />
       </motion.div>
 
@@ -67,26 +73,6 @@ const Hero = ({ onVideoModalOpen }) => {
           >
             צפו באימונים שלנו
           </button>
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.6, repeat: Infinity, repeatType: 'reverse' }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-        >
-          <svg
-            className="w-6 h-6 text-gold-500"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
         </motion.div>
       </motion.div>
     </section>

@@ -37,3 +37,9 @@ DEPLOYMENT_GUIDE_HE.md
 QUICK_DEPLOY.md
 QUICKSTART.md
 
+public/assets/*
+public/assets/*.mp4
+public/assets/*.MOV
+public/assets/*.mov
+public/assets/*.avi
+public/assets/*.webm
