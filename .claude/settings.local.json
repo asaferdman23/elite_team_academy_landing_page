@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://placehold.co/800x800/1a1f3a/F2C94C.jpg\" -o coach.jpg)",
+      "Bash(curl:*)",
+      "Bash(curl -s \"https://placehold.co/1200x800/1a1f3a/F2C94C.jpg\" -o training2.jpg)",
+      "Bash(curl -s \"https://placehold.co/1920x1080/1a1f3a/F2C94C.jpg\" -o kids.jpg)",
+      "Bash(curl -s \"https://placehold.co/1200x630/1a1f3a/F2C94C.jpg\" -o og-image.jpg)",
+      "Bash(npm run build)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

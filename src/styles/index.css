@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar - בסגנון הלוגו */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #F2C94C 0%, #D97706 100%);
+  border-radius: 10px;
+  border: 2px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FCD34D 0%, #F2C94C 100%);
+  box-shadow: 0 0 10px rgba(242, 201, 76, 0.5);
+}
+
+/* Glass morphism helper - זהב ושחור */
+.glass {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(242, 201, 76, 0.2);
+}
+
+.glass-gold {
+  background: rgba(242, 201, 76, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(242, 201, 76, 0.3);
+}
+
+/* אפקט זוהר לכפתורים */
+.btn-gold {
+  @apply bg-gradient-gold text-navy-900 font-bold px-6 py-3 rounded-xl;
+  @apply hover:shadow-gold-lg hover:scale-105 transition-all duration-300;
+  @apply active:scale-95;
+}
+
+.btn-gold-outline {
+  @apply border-2 border-gold-500 text-gold-500 font-bold px-6 py-3 rounded-xl;
+  @apply hover:bg-gold-500 hover:text-navy-900 hover:shadow-gold transition-all duration-300;
+}
+
+/* טקסט זהב עם גראדיאנט */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F2C94C 0%, #FCD34D 50%, #F2C94C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* קו תחתון זהב מונפש */
+.underline-gold {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-gold::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #F2C94C, #D97706);
+  transition: width 0.3s ease;
+}
+
+.underline-gold:hover::after {
+  width: 100%;
+}
+
+/* כרטיס עם אפקט hover זהב */
+.card-hover-gold {
+  @apply transition-all duration-300;
+  @apply hover:shadow-gold-lg hover:scale-105;
+  @apply hover:border-gold-500;
+}
