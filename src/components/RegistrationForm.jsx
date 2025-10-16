@@ -92,6 +92,16 @@ const RegistrationForm = () => {
       })
 
       setSubmitStatus('success')
+
+      // Track form submission in Google Analytics
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'form_submission', {
+          event_category: 'engagement',
+          event_label: 'registration_form',
+          value: 1
+        })
+      }
+
       // Reset form
       setFormData({
         parentName: '',
