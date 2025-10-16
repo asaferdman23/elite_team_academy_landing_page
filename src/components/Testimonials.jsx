@@ -51,24 +51,28 @@ const Testimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {testimonials.map((testimonial, index) => (
-            <motion.div
+            <motion.article
               key={testimonial.id}
               variants={fadeIn}
               custom={index}
               transition={{ delay: index * 0.2 }}
               className="glass-gold border-2 border-gold-500/30 p-8 rounded-2xl card-hover-gold"
+              aria-label={`המלצה מ${testimonial.parent}`}
             >
               {/* Quote Icon */}
-              <div className="text-gold-500 text-4xl mb-4">"</div>
+              <div className="text-gold-500 text-4xl mb-4" aria-hidden="true">"</div>
 
               {/* Quote Text */}
-              <p className="text-gray-200 text-lg leading-relaxed mb-6">
+              <blockquote className="text-gray-200 text-lg leading-relaxed mb-6">
                 {testimonial.quote}
-              </p>
+              </blockquote>
 
               {/* Parent Info */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gold-500 flex items-center justify-center text-navy-900 font-bold text-xl">
+                <div
+                  className="w-12 h-12 rounded-full bg-gold-500 flex items-center justify-center text-navy-900 font-bold text-xl"
+                  aria-hidden="true"
+                >
                   {testimonial.initial}
                 </div>
                 <div>
@@ -76,7 +80,7 @@ const Testimonials = () => {
                   <p className="text-gray-400 text-sm">הורה</p>
                 </div>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </motion.div>

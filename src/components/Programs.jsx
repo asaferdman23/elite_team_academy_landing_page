@@ -56,33 +56,37 @@ const Programs = () => {
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {programs.map((program, index) => (
-        <motion.div
+        <motion.article
           key={program.id}
           variants={fadeInUp}
           custom={index}
           whileHover="hover"
-          className="h-96" 
+          className="h-96"
+          aria-label={`תוכנית ${program.title}`}
         >
           <motion.div
             variants={hoverScale}
             className="relative overflow-hidden rounded-2xl h-full border-2 border-gold-500/20 card-hover-gold"
-            style={{
-              backgroundImage: `url(${program.backgroundImage})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
-            }}
+            role="img"
+            aria-label={program.title}
           >
+            {/* Background image with proper alt handling */}
+            <img
+              src={program.backgroundImage}
+              alt={program.title}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+
             {/* Dark overlay for better text readability */}
-            <div className="absolute inset-0 bg-navy-900/70"></div>
-            
+            <div className="absolute inset-0 bg-navy-900/70" aria-hidden="true"></div>
+
             {/* Content */}
             <div className="relative z-10 p-8 h-full flex flex-col justify-end">
               <h3 className="text-2xl font-bold text-white mb-4">{program.title}</h3>
               <p className="text-gray-200 leading-relaxed text-sm">{program.description}</p>
             </div>
           </motion.div>
-        </motion.div>
+        </motion.article>
       ))}
     </div>
 

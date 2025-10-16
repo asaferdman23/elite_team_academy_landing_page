@@ -164,7 +164,7 @@ const RegistrationForm = () => {
               </p>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit} className="glass border-2 border-gold-500/20 rounded-2xl p-8 space-y-6">
+            <form onSubmit={handleSubmit} className="glass border-2 border-gold-500/20 rounded-2xl p-8 space-y-6" aria-label="טופס הרשמה לאימון ניסיון חינם">
               {/* Parent Name */}
               <div>
                 <label htmlFor="parentName" className="block text-white font-semibold mb-2">
@@ -176,6 +176,9 @@ const RegistrationForm = () => {
                   name="parentName"
                   value={formData.parentName}
                   onChange={handleChange}
+                  aria-required="true"
+                  aria-invalid={errors.parentName ? 'true' : 'false'}
+                  aria-describedby={errors.parentName ? 'parentName-error' : undefined}
                   className={`w-full px-4 py-3 rounded-xl bg-white/10 border ${
                     errors.parentName ? 'border-red-500' : 'border-white/20'
                   } text-white placeholder-gray-400 focus:outline-none focus:border-gold-500 transition-colors text-right`}
@@ -183,7 +186,7 @@ const RegistrationForm = () => {
                   dir="rtl"
                 />
                 {errors.parentName && (
-                  <p className="mt-1 text-red-400 text-sm text-right">{errors.parentName}</p>
+                  <p id="parentName-error" className="mt-1 text-red-400 text-sm text-right" role="alert">{errors.parentName}</p>
                 )}
               </div>
 
@@ -277,21 +280,25 @@ const RegistrationForm = () => {
                 <label className="flex items-start gap-3 cursor-pointer">
                   <input
                     type="checkbox"
+                    id="consent"
                     name="consent"
                     checked={formData.consent}
                     onChange={handleChange}
+                    aria-required="true"
+                    aria-invalid={errors.consent ? 'true' : 'false'}
+                    aria-describedby={errors.consent ? 'consent-error' : undefined}
                     className="mt-1 w-5 h-5 rounded border-white/20 bg-white/10 text-gold-500 focus:ring-gold-500 focus:ring-offset-navy-900"
                   />
                   <span className={`text-sm ${errors.consent ? 'text-red-400' : 'text-gray-300'} text-right`}>
                     אני מאשר/ת לאקדמיית אליט טים ליצור איתי קשר בנוגע לאימון הניסיון החינמי ותוכניות עתידיות. קראתי ואני מסכים/ה ל
-                    <a href="/terms-of-service" target="_blank" className="text-gold-500 hover:text-gold-400 underline mx-1">תנאי השימוש</a>
+                    <a href="/terms-of-service" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-gold-400 underline mx-1">תנאי השימוש</a>
                     ול
-                    <a href="/privacy-policy" target="_blank" className="text-gold-500 hover:text-gold-400 underline mx-1">מדיניות הפרטיות</a>
+                    <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-gold-400 underline mx-1">מדיניות הפרטיות</a>
                     *
                   </span>
                 </label>
                 {errors.consent && (
-                  <p className="mt-1 text-red-400 text-sm text-right">{errors.consent}</p>
+                  <p id="consent-error" className="mt-1 text-red-400 text-sm text-right" role="alert">{errors.consent}</p>
                 )}
               </div>
 

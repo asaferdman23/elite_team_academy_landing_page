@@ -62,10 +62,10 @@ const About = () => {
             <div className="relative">
               <img
                 src="/assets/mike.JPEG"
-                alt="מאמן ירדן עם שחקני כדורסל צעירים"
+                alt="מאמן ירדן יצחקוב עם שחקני כדורסל צעירים באקדמיית אליט טים"
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-navy-900/50 to-transparent" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-navy-900/50 to-transparent" aria-hidden="true" />
             </div>
           </motion.div>
         </div>

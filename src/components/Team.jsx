@@ -163,26 +163,27 @@ const Team = () => {
         {/* Team Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {teamPlayers.map((player, index) => (
-            <motion.div
+            <motion.article
               key={player.id}
               variants={fadeIn}
               custom={index}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
               className="relative group overflow-hidden rounded-2xl bg-navy-900/50 border-2 border-gold-500/20 hover:border-gold-500 transition-all cursor-pointer"
+              aria-label={`${player.name}, גיל ${player.age}, ${player.position}`}
             >
               {/* Player Image */}
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src={player.image}
-                  alt={player.name}
+                  alt={`${player.name} - שחקן כדורסל בן ${player.age} במיקום ${player.position}`}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
               {/* Overlay Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" aria-hidden="true" />
 
               {/* Player Info */}
               <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
@@ -206,10 +207,10 @@ const Team = () => {
               </div>
 
               {/* Hover Glow Effect */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" aria-hidden="true">
                 <div className="absolute inset-0 border-2 border-gold-500 rounded-2xl shadow-gold-lg" />
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
 
