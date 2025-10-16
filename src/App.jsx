@@ -4,7 +4,6 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Programs from './components/Programs'
 import Testimonials from './components/Testimonials'
-import Gallery from './components/Gallery'
 import Team from './components/Team'
 import CTA from './components/CTA'
 import RegistrationForm from './components/RegistrationForm'
@@ -22,7 +21,6 @@ function App() {
       <About />
       <Programs />
       <Testimonials />
-      <Gallery />
       <Team />
       <CTA />
       <RegistrationForm />

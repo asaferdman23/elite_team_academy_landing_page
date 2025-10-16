@@ -39,8 +39,8 @@ const Navbar = () => {
             <a href="#testimonials" className="text-gray-300 hover:text-gold-500 transition-colors font-medium">
               המלצות
             </a>
-            <a href="#gallery" className="text-gray-300 hover:text-gold-500 transition-colors font-medium">
-              גלריה
+            <a href="#team" className="text-gray-300 hover:text-gold-500 transition-colors font-medium">
+              השחקנים
             </a>
             <a
               href="#register"
