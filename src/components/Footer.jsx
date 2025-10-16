@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
@@ -41,9 +40,33 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-white/10 text-center">
-          <p className="text-gray-400 text-sm">
+        {/* Legal Links */}
+        <div className="mt-8 pt-8 border-t border-white/10">
+          <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
+            <a
+              href="/privacy-policy"
+              className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
+            >
+              מדיניות פרטיות
+            </a>
+            <span className="text-gray-600">|</span>
+            <a
+              href="/terms-of-service"
+              className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
+            >
+              תנאי שימוש
+            </a>
+            <span className="text-gray-600">|</span>
+            <a
+              href="/accessibility-statement"
+              className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
+            >
+              הצהרת נגישות
+            </a>
+          </div>
+
+          {/* Copyright */}
+          <p className="text-gray-400 text-sm text-center">
             © {new Date().getFullYear()} אקדמיית אליט טים. כל הזכויות שמורות.
           </p>
         </div>

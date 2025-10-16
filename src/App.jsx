@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,15 +9,16 @@ import Team from './components/Team'
 import CTA from './components/CTA'
 import RegistrationForm from './components/RegistrationForm'
 import Footer from './components/Footer'
-import VideoModal from './components/VideoModal'
+import VideoCarousel from './components/VideoCarousel'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import AccessibilityStatement from './pages/AccessibilityStatement'
 
 function App() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
 
-  return (
-    <div className="min-h-screen bg-navy text-white"
-         style={{ background: 'linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%)' }}>
-      <Navbar />
+  const HomePage = () => (
+    <>
       <Hero onVideoModalOpen={() => setIsVideoModalOpen(true)} />
       <About />
       <Programs />
@@ -24,9 +26,24 @@ function App() {
       <Team />
       <CTA />
       <RegistrationForm />
-      <Footer />
-      <VideoModal isOpen={isVideoModalOpen} onClose={() => setIsVideoModalOpen(false)} />
-    </div>
+      <VideoCarousel isOpen={isVideoModalOpen} onClose={() => setIsVideoModalOpen(false)} />
+    </>
+  )
+
+  return (
+    <Router>
+      <div className="min-h-screen bg-navy text-white"
+           style={{ background: 'linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%)' }}>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/accessibility-statement" element={<AccessibilityStatement />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

@@ -6,6 +6,7 @@ import { submitToPipedrive } from './adapters/pipedrive'
 import { submitToMonday } from './adapters/monday'
 import { submitToAirtable } from './adapters/airtable'
 import { submitViaEmail } from './adapters/emailFallback'
+import { submitToFixDigital } from './adapters/fixdigital'
 
 /**
  * Submit lead to configured CRM provider
@@ -43,6 +44,10 @@ export const submitLead = async (leadData) => {
 
       case 'airtable':
         result = await submitToAirtable(leadData)
+        break
+
+      case 'fixdigital':
+        result = await submitToFixDigital(leadData)
         break
 
       case 'email':

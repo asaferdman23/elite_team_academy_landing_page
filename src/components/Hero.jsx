@@ -52,7 +52,7 @@ const Hero = ({ onVideoModalOpen }) => {
           variants={fadeInUp}
           className="text-xl sm:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed"
         >
-          המקום שבו ספורטאים צעירים הופכים לאלופים
+        <p className="text-center font-bold text-3xl" > יש לנו את השיטה המנצחת להיות <span className="text-gold-500 font-bold">Elite</span> </p>
         </motion.p>
 
         <motion.div

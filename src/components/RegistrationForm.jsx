@@ -34,7 +34,7 @@ const RegistrationForm = () => {
       newErrors.parentName = 'נא להזין שם הורה'
     }
 
-    if (!formData.childAge || formData.childAge < 5 || formData.childAge > 18) {
+    if (!formData.childAge || formData.childAge < 5 || formData.childAge > 99) {
       newErrors.childAge = 'נא להזין גיל תקין (5-18)'
     }
 
@@ -199,7 +199,7 @@ const RegistrationForm = () => {
                   value={formData.childAge}
                   onChange={handleChange}
                   min="5"
-                  max="18"
+                  max="99"
                   className={`w-full px-4 py-3 rounded-xl bg-white/10 border ${
                     errors.childAge ? 'border-red-500' : 'border-white/20'
                   } text-white placeholder-gray-400 focus:outline-none focus:border-gold-500 transition-colors text-right`}
@@ -283,7 +283,11 @@ const RegistrationForm = () => {
                     className="mt-1 w-5 h-5 rounded border-white/20 bg-white/10 text-gold-500 focus:ring-gold-500 focus:ring-offset-navy-900"
                   />
                   <span className={`text-sm ${errors.consent ? 'text-red-400' : 'text-gray-300'} text-right`}>
-                    אני מאשר/ת לאקדמיית אליט טים ליצור איתי קשר בנוגע לאימון הניסיון החינמי ותוכניות עתידיות. *
+                    אני מאשר/ת לאקדמיית אליט טים ליצור איתי קשר בנוגע לאימון הניסיון החינמי ותוכניות עתידיות. קראתי ואני מסכים/ה ל
+                    <a href="/terms-of-service" target="_blank" className="text-gold-500 hover:text-gold-400 underline mx-1">תנאי השימוש</a>
+                    ול
+                    <a href="/privacy-policy" target="_blank" className="text-gold-500 hover:text-gold-400 underline mx-1">מדיניות הפרטיות</a>
+                    *
                   </span>
                 </label>
                 {errors.consent && (
