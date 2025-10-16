@@ -5,6 +5,7 @@ import About from './components/About'
 import Programs from './components/Programs'
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
+import Team from './components/Team'
 import CTA from './components/CTA'
 import RegistrationForm from './components/RegistrationForm'
 import Footer from './components/Footer'
@@ -22,6 +23,7 @@ function App() {
       <Programs />
       <Testimonials />
       <Gallery />
+      <Team />
       <CTA />
       <RegistrationForm />
       <Footer />
