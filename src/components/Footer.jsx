@@ -6,10 +6,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo/Brand */}
           <div className="text-center md:text-right">
-            <h3 className="text-2xl font-extrabold text-white mb-2">
-                Elite Team <span className="text-gold-500">Academy</span>
-            </h3>
-            <p className="text-gray-400 text-sm">בונים אלופים בתוך ומחוץ למגרש</p>
+            <div className="flex items-center justify-center md:justify-end gap-4 mb-2">
+              <h3 className="text-2xl font-extrabold text-white">
+                  Elite Team <span className="text-gold-500">Academy</span>
+              </h3>
+              <img 
+                className="w-12 h-12 rounded-lg object-cover" 
+                src="https://res.cloudinary.com/ddg685nfx/image/upload/v1760647272/Icon-Gold-TransparentBG_twfc3c.png" 
+                alt="Elite Team Academy Logo" 
+              />
+            </div>
           </div>
 
           {/* Social Links */}
@@ -66,9 +72,14 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <p className="text-gray-400 text-sm text-center">
-            © {new Date().getFullYear()} אקדמיית אליט טים. כל הזכויות שמורות.
-          </p>
+          <div className="text-center space-y-2">
+            <p className="text-gray-300 text-sm">
+              © {new Date().getFullYear()} אקדמיית אליט טים. כל הזכויות שמורות.
+            </p>
+            <p className="text-gray-400 text-xs">
+              Made by <a href="https://asafportfolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-gold-400 transition-colors">asaf.dev</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
