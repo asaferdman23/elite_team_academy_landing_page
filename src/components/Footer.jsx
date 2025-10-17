@@ -51,28 +51,28 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
             <a
               href="/site-regulations"
-              className="text-gray-200 hover:text-gold-500 transition-colors text-sm"
+              className="text-white hover:text-gold-500 transition-colors text-sm"
             >
               תקנון האתר
             </a>
-            <span className="text-gray-500">|</span>
+            <span className="text-white/50">|</span>
             <a
               href="/privacy-policy"
-              className="text-gray-200 hover:text-gold-500 transition-colors text-sm"
+              className="text-white hover:text-gold-500 transition-colors text-sm"
             >
               מדיניות פרטיות
             </a>
-            <span className="text-gray-500">|</span>
+            <span className="text-white/50">|</span>
             <a
               href="/terms-of-service"
-              className="text-gray-200 hover:text-gold-500 transition-colors text-sm"
+              className="text-white hover:text-gold-500 transition-colors text-sm"
             >
               תנאי שימוש
             </a>
-            <span className="text-gray-500">|</span>
+            <span className="text-white/50">|</span>
             <a
               href="/accessibility-statement"
-              className="text-gray-200 hover:text-gold-500 transition-colors text-sm"
+              className="text-white hover:text-gold-500 transition-colors text-sm"
             >
               הצהרת נגישות
             </a>
@@ -80,10 +80,10 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center space-y-2">
-            <p className="text-gray-200 text-sm">
+            <p className="text-white text-sm">
               © {new Date().getFullYear()} אקדמיית אליט טים. כל הזכויות שמורות.
             </p>
-            <p className="text-gray-300 text-xs">
+            <p className="text-white text-xs">
               Made by <a href="https://asafportfolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-gold-400 transition-colors">asaf.dev</a>
             </p>
           </div>
