@@ -1,14 +1,13 @@
 import { motion } from 'framer-motion'
 import { fadeIn, useScrollAnimation } from '../lib/motion'
 
-// TODO: Replace these placeholder URLs with actual player photos from Cloudinary
 const teamPlayers = [
   {
     id: 1,
     name: 'שחקן 1',
     age: 16,
     position: 'גארד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+1',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A7%D7%A8%D7%95%D7%9F_%D7%93%D7%A9%D7%99%D7%9C%D7%93%D7%A1_jev4k5.jpg',
     featured: true,
     badge: '⭐ MVP'
   },
@@ -17,7 +16,7 @@ const teamPlayers = [
     name: 'שחקן 2',
     age: 15,
     position: 'פורוורד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+2',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717861/%D7%91%D7%9F_%D7%90%D7%9C%D7%98%D7%A9%D7%95%D7%9C%D7%A8_g1njm2.jpg',
     featured: false
   },
   {
@@ -25,7 +24,7 @@ const teamPlayers = [
     name: 'שחקן 3',
     age: 17,
     position: 'סנטר',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+3',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717861/%D7%A8%D7%95%D7%A2%D7%99_%D7%94%D7%95%D7%91%D7%A8_zrxexr.jpg',
     featured: false
   },
   {
@@ -33,7 +32,7 @@ const teamPlayers = [
     name: 'שחקן 4',
     age: 16,
     position: 'גארד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+4',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%9C%D7%99%D7%90%D7%95%D7%A8_%D7%A7%D7%A8%D7%A8%D7%94_v4xqr4.jpg',
     featured: true,
     badge: '🏆 קפטן'
   },
@@ -42,7 +41,7 @@ const teamPlayers = [
     name: 'שחקן 5',
     age: 14,
     position: 'פורוורד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+5',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A0%D7%95%D7%A2%D7%9D_%D7%99%D7%A2%D7%A7%D7%95%D7%91%D7%99_i6d4bc.jpg',
     featured: false
   },
   {
@@ -50,7 +49,7 @@ const teamPlayers = [
     name: 'שחקן 6',
     age: 15,
     position: 'גארד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+6',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%99%D7%95%D7%90%D7%91_%D7%95%D7%99%D7%98%D7%9C%D7%9D_oeawem.jpg',
     featured: false
   },
   {
@@ -58,7 +57,7 @@ const teamPlayers = [
     name: 'שחקן 7',
     age: 16,
     position: 'פורוורד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+7',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/%D7%A0%D7%95%D7%A2%D7%9D_%D7%A0%D7%90%D7%95%D7%A8_i2mgct.webp',
     featured: false
   },
   {
@@ -66,7 +65,7 @@ const teamPlayers = [
     name: 'שחקן 8',
     age: 17,
     position: 'סנטר',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+8',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/%D7%94%D7%95%D7%9B%D7%A9%D7%98%D7%98%D7%A8_lnq25r.jpg',
     featured: false
   },
   {
@@ -74,7 +73,7 @@ const teamPlayers = [
     name: 'שחקן 9',
     age: 15,
     position: 'גארד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+9',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%92%D7%99%D7%9C_%D7%91%D7%A0%D7%99_sv1p2l.jpg',
     featured: false
   },
   {
@@ -82,7 +81,7 @@ const teamPlayers = [
     name: 'שחקן 10',
     age: 16,
     position: 'פורוורד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+10',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%93%D7%90%D7%A7%D7%A8%D7%99_%D7%98%D7%90%D7%A7%D7%A8_yxm3hk.jpg',
     featured: false
   },
   {
@@ -90,7 +89,7 @@ const teamPlayers = [
     name: 'שחקן 11',
     age: 14,
     position: 'גארד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+11',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A2%D7%9E%D7%99%D7%AA_%D7%90%D7%9C%D7%95%D7%9F_stm6dn.jpg',
     featured: false
   },
   {
@@ -98,7 +97,7 @@ const teamPlayers = [
     name: 'שחקן 12',
     age: 17,
     position: 'סנטר',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+12',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/%D7%A2%D7%9E%D7%99%D7%AA_%D7%90%D7%91%D7%95_qbt2yu.webp',
     featured: false
   },
   {
@@ -106,7 +105,7 @@ const teamPlayers = [
     name: 'שחקן 13',
     age: 15,
     position: 'פורוורד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+13',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/michael_kweyfc.jpg',
     featured: false
   },
   {
@@ -114,7 +113,7 @@ const teamPlayers = [
     name: 'שחקן 14',
     age: 16,
     position: 'גארד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+14',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/%D7%93%D7%A8%D7%95%D7%A7%D7%A8%D7%90%D7%95%D7%A4%D7%95%D7%A8%D7%93_ohb61a.webp',
     featured: false
   },
   {
@@ -122,7 +121,7 @@ const teamPlayers = [
     name: 'שחקן 15',
     age: 17,
     position: 'פורוורד',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+15',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717858/dj_sharp_gaaqeu.jpg',
     featured: false
   },
   {
@@ -130,7 +129,15 @@ const teamPlayers = [
     name: 'שחקן 16',
     age: 15,
     position: 'סנטר',
-    image: 'https://via.placeholder.com/400x500/1a1a1a/F2C94C?text=Player+16',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717858/%D7%A9%D7%95%D7%9F_%D7%93%D7%90%D7%95%D7%A1%D7%9F_j3b9n8.avif',
+    featured: false
+  },
+  {
+    id: 17,
+    name: 'שחקן 17',
+    age: 16,
+    position: 'גארד',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717858/%D7%A0%D7%AA%D7%A0%D7%90%D7%9C_%D7%90%D7%A8%D7%A6%D7%99_qkkrer.jpg',
     featured: false
   },
 ]
