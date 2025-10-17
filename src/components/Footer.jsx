@@ -50,6 +50,13 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-white/10">
           <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
             <a
+              href="/site-regulations"
+              className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
+            >
+              תקנון האתר
+            </a>
+            <span className="text-gray-600">|</span>
+            <a
               href="/privacy-policy"
               className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
             >

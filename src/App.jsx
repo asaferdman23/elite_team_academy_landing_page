@@ -13,6 +13,7 @@ import VideoCarousel from './components/VideoCarousel'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import AccessibilityStatement from './pages/AccessibilityStatement'
+import SiteRegulations from './pages/SiteRegulations'
 
 function App() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -40,6 +41,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/accessibility-statement" element={<AccessibilityStatement />} />
+          <Route path="/site-regulations" element={<SiteRegulations />} />
         </Routes>
         <Footer />
       </div>
