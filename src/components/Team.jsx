@@ -4,138 +4,121 @@ import { fadeIn, useScrollAnimation } from '../lib/motion'
 const teamPlayers = [
   {
     id: 1,
-    name: 'שחקן 1',
-    age: 16,
+    name: 'קארון דשילדס',
     position: 'גארד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A7%D7%A8%D7%95%D7%9F_%D7%93%D7%A9%D7%99%D7%9C%D7%93%D7%A1_jev4k5.jpg',
     featured: false
   },
   {
     id: 2,
-    name: 'שחקן 2',
-    age: 15,
-    position: 'פורוורד',
-    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717861/%D7%91%D7%9F_%D7%90%D7%9C%D7%98%D7%A9%D7%95%D7%9C%D7%A8_g1njm2.jpg',
+    name: 'נתנאל ארצי',
+    position: 'גארד',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717858/%D7%A0%D7%AA%D7%A0%D7%90%D7%9C_%D7%90%D7%A8%D7%A6%D7%99_qkkrer.jpg',
     featured: false
   },
   {
     id: 3,
-    name: 'שחקן 3',
-    age: 17,
+    name: 'רועי הובר',
     position: 'סנטר',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717861/%D7%A8%D7%95%D7%A2%D7%99_%D7%94%D7%95%D7%91%D7%A8_zrxexr.jpg',
     featured: false
   },
   {
     id: 4,
-    name: 'שחקן 4',
-    age: 16,
+    name: 'ליאור קררה',
     position: 'גארד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%9C%D7%99%D7%90%D7%95%D7%A8_%D7%A7%D7%A8%D7%A8%D7%94_v4xqr4.jpg',
     featured: false
   },
   {
-    id: 5,
-    name: 'שחקן 5',
-    age: 14,
+    id: 5 ,
+    name: 'בן אלטשולר',
     position: 'פורוורד',
-    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A0%D7%95%D7%A2%D7%9D_%D7%99%D7%A2%D7%A7%D7%95%D7%91%D7%99_i6d4bc.jpg',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717861/%D7%91%D7%9F_%D7%90%D7%9C%D7%98%D7%A9%D7%95%D7%9C%D7%A8_g1njm2.jpg',
     featured: false
   },
   {
     id: 6,
-    name: 'שחקן 6',
-    age: 15,
+    name: 'יואב ויטלם',
     position: 'גארד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%99%D7%95%D7%90%D7%91_%D7%95%D7%99%D7%98%D7%9C%D7%9D_oeawem.jpg',
     featured: false
   },
   {
     id: 7,
-    name: 'שחקן 7',
-    age: 16,
+    name: 'דיג׳יי שארפ',
+    position: 'פורוורד',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717858/dj_sharp_gaaqeu.jpg',
+    featured: false
+  },
+  {
+    id: 8,
+    name: 'נעם נאור',
     position: 'פורוורד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/%D7%A0%D7%95%D7%A2%D7%9D_%D7%A0%D7%90%D7%95%D7%A8_i2mgct.webp',
     featured: false
   },
   {
-    id: 8,
-    name: 'שחקן 8',
-    age: 17,
+    id: 5,
+    name: 'נעם יעקובי',
+    position: 'פורוורד',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A0%D7%95%D7%A2%D7%9D_%D7%99%D7%A2%D7%A7%D7%95%D7%91%D7%99_i6d4bc.jpg',
+    featured: false
+  },
+  {
+    id: 13,
+    name: 'מייקל בריסקר',
+    position: 'פורוורד',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/michael_kweyfc.jpg',
+    featured: false
+  },
+  {
+    id: 9,
+    name: 'יובל הוכשטטר',
     position: 'סנטר',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/%D7%94%D7%95%D7%9B%D7%A9%D7%98%D7%98%D7%A8_lnq25r.jpg',
     featured: false
   },
   {
-    id: 9,
-    name: 'שחקן 9',
-    age: 15,
-    position: 'גארד',
-    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%92%D7%99%D7%9C_%D7%91%D7%A0%D7%99_sv1p2l.jpg',
-    featured: false
-  },
-  {
     id: 10,
-    name: 'שחקן 10',
-    age: 16,
+    name: 'דקארי פארקר',
     position: 'פורוורד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%93%D7%90%D7%A7%D7%A8%D7%99_%D7%98%D7%90%D7%A7%D7%A8_yxm3hk.jpg',
     featured: false
   },
   {
     id: 11,
-    name: 'שחקן 11',
-    age: 14,
+    name: 'גיל בני',
     position: 'גארד',
-    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A2%D7%9E%D7%99%D7%AA_%D7%90%D7%9C%D7%95%D7%9F_stm6dn.jpg',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%92%D7%99%D7%9C_%D7%91%D7%A0%D7%99_sv1p2l.jpg',
     featured: false
   },
   {
     id: 12,
-    name: 'שחקן 12',
-    age: 17,
+    name: 'עמית אבו',
     position: 'סנטר',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/%D7%A2%D7%9E%D7%99%D7%AA_%D7%90%D7%91%D7%95_qbt2yu.webp',
     featured: false
   },
   {
     id: 13,
-    name: 'שחקן 13',
-    age: 15,
-    position: 'פורוורד',
-    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/michael_kweyfc.jpg',
+    name: 'עמית אלון',
+    position: 'גארד',
+    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A2%D7%9E%D7%99%D7%AA_%D7%90%D7%9C%D7%95%D7%9F_stm6dn.jpg',
     featured: false
   },
   {
     id: 14,
-    name: 'שחקן 14',
-    age: 16,
+    name: 'דרו קרופורד',
     position: 'גארד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717859/%D7%93%D7%A8%D7%95%D7%A7%D7%A8%D7%90%D7%95%D7%A4%D7%95%D7%A8%D7%93_ohb61a.webp',
     featured: false
   },
   {
     id: 15,
-    name: 'שחקן 15',
-    age: 17,
-    position: 'פורוורד',
-    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717858/dj_sharp_gaaqeu.jpg',
-    featured: false
-  },
-  {
-    id: 16,
-    name: 'שחקן 16',
-    age: 15,
+    name: 'שון דאוסן',
     position: 'סנטר',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717858/%D7%A9%D7%95%D7%9F_%D7%93%D7%90%D7%95%D7%A1%D7%9F_j3b9n8.avif',
-    featured: false
-  },
-  {
-    id: 17,
-    name: 'שחקן 17',
-    age: 16,
-    position: 'גארד',
-    image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717858/%D7%A0%D7%AA%D7%A0%D7%90%D7%9C_%D7%90%D7%A8%D7%A6%D7%99_qkkrer.jpg',
     featured: false
   },
 ]
@@ -175,13 +158,13 @@ const Team = () => {
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
               className="relative group overflow-hidden rounded-2xl bg-navy-900/50 border-2 border-gold-500/20 hover:border-gold-500 transition-all cursor-pointer"
-              aria-label={`${player.name}, גיל ${player.age}, ${player.position}`}
+              aria-label={`${player.name}, ${player.position}`}
             >
               {/* Player Image */}
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src={player.image}
-                  alt={`${player.name} - שחקן כדורסל בן ${player.age} במיקום ${player.position}`}
+                  alt={`${player.name} - ${player.position}`}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -205,8 +188,6 @@ const Team = () => {
 
                 <h3 className="text-white text-xl font-bold mb-1">{player.name}</h3>
                 <div className="flex items-center justify-center gap-2 text-gold-500 text-sm">
-                  <span>גיל {player.age}</span>
-                  <span>•</span>
                   <span>{player.position}</span>
                 </div>
               </div>
