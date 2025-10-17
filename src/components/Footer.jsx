@@ -7,13 +7,13 @@ const Footer = () => {
           {/* Logo/Brand */}
           <div className="text-center md:text-right">
             <div className="flex items-center justify-center md:justify-end gap-4 mb-2">
-              <h3 className="text-2xl font-extrabold text-white">
+              <h2 className="text-2xl font-extrabold text-white">
                   Elite Team <span className="text-gold-500">Academy</span>
-              </h3>
-              <img 
-                className="w-12 h-12 rounded-lg object-cover" 
-                src="https://res.cloudinary.com/ddg685nfx/image/upload/v1760647272/Icon-Gold-TransparentBG_twfc3c.png" 
-                alt="Elite Team Academy Logo" 
+              </h2>
+              <img
+                className="w-12 h-12 rounded-lg object-cover"
+                src="https://res.cloudinary.com/ddg685nfx/image/upload/v1760647272/Icon-Gold-TransparentBG_twfc3c.png"
+                alt="Elite Team Academy Logo"
               />
             </div>
           </div>
@@ -51,28 +51,28 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
             <a
               href="/site-regulations"
-              className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
+              className="text-gray-200 hover:text-gold-500 transition-colors text-sm"
             >
               תקנון האתר
             </a>
-            <span className="text-gray-600">|</span>
+            <span className="text-gray-500">|</span>
             <a
               href="/privacy-policy"
-              className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
+              className="text-gray-200 hover:text-gold-500 transition-colors text-sm"
             >
               מדיניות פרטיות
             </a>
-            <span className="text-gray-600">|</span>
+            <span className="text-gray-500">|</span>
             <a
               href="/terms-of-service"
-              className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
+              className="text-gray-200 hover:text-gold-500 transition-colors text-sm"
             >
               תנאי שימוש
             </a>
-            <span className="text-gray-600">|</span>
+            <span className="text-gray-500">|</span>
             <a
               href="/accessibility-statement"
-              className="text-gray-400 hover:text-gold-500 transition-colors text-sm"
+              className="text-gray-200 hover:text-gold-500 transition-colors text-sm"
             >
               הצהרת נגישות
             </a>
@@ -80,10 +80,10 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center space-y-2">
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-200 text-sm">
               © {new Date().getFullYear()} אקדמיית אליט טים. כל הזכויות שמורות.
             </p>
-            <p className="text-gray-400 text-xs">
+            <p className="text-gray-300 text-xs">
               Made by <a href="https://asafportfolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-gold-400 transition-colors">asaf.dev</a>
             </p>
           </div>

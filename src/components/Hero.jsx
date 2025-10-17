@@ -63,8 +63,7 @@ const Hero = ({ onVideoModalOpen }) => {
             href="#register"
             className="bg-gradient-gold text-navy-900 px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 hover:shadow-gold-lg transition-all inline-block animate-glow"
           >
-            הזמנת אימון ניסיון חינם
-          </a>
+            הרשמה למסלולי האקדמיה          </a>
 
           <button
             onClick={onVideoModalOpen}
