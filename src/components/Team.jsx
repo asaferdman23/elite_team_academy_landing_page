@@ -158,13 +158,13 @@ const Team = () => {
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
               className="relative group overflow-hidden rounded-2xl bg-navy-900/50 border-2 border-gold-500/20 hover:border-gold-500 transition-all cursor-pointer"
-              aria-label={`${player.name}, ${player.position}`}
+              aria-label={player.name}
             >
               {/* Player Image */}
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src={player.image}
-                  alt={`${player.name} - ${player.position}`}
+                  alt={player.name}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -186,10 +186,7 @@ const Team = () => {
                   </motion.div>
                 )}
 
-                <h3 className="text-white text-xl font-bold mb-1">{player.name}</h3>
-                <div className="flex items-center justify-center gap-2 text-gold-500 text-sm">
-                  <span>{player.position}</span>
-                </div>
+                <h3 className="text-white text-xl font-bold">{player.name}</h3>
               </div>
 
               {/* Hover Glow Effect */}
