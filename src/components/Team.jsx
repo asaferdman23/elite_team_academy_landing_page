@@ -8,8 +8,7 @@ const teamPlayers = [
     age: 16,
     position: 'גארד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%A7%D7%A8%D7%95%D7%9F_%D7%93%D7%A9%D7%99%D7%9C%D7%93%D7%A1_jev4k5.jpg',
-    featured: true,
-    badge: '⭐ MVP'
+    featured: false
   },
   {
     id: 2,
@@ -33,8 +32,7 @@ const teamPlayers = [
     age: 16,
     position: 'גארד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%9C%D7%99%D7%90%D7%95%D7%A8_%D7%A7%D7%A8%D7%A8%D7%94_v4xqr4.jpg',
-    featured: true,
-    badge: '🏆 קפטן'
+    featured: false
   },
   {
     id: 5,
@@ -163,7 +161,7 @@ const Team = () => {
             <span className="text-gold-500">השחקנים</span> שלנו
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            הכירו את הספורטאים המצטיינים של אקדמיית אליט טים - הדור הבא של כוכבי הכדורסל
+            שחקנים מקצועיים שעברו אצלנו בשנים האחרונות
           </p>
         </motion.div>
 
