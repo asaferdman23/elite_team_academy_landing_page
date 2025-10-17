@@ -127,47 +127,153 @@ const AccessibilityStatement = () => {
             </ul>
           </section>
 
-          {/* Section 6 - Feedback */}
+          {/* Section 6 - Accessibility Coordinator */}
           <section>
-            <h2 className="text-2xl font-bold text-gold-500 mb-4">6. דיווח על בעיות נגישות</h2>
+            <h2 className="text-2xl font-bold text-gold-500 mb-4">6. רכז/ת נגישות</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              אם נתקלת בבעיית נגישות באתר שלנו, או אם יש לך הצעות לשיפור, 
-              אנו מעודדים אותך ליצור איתנו קשר. כל דיווח יטופל במהירות ובמקצועיות.
+              בהתאם לחוק, מונה באקדמיה רכז/ת נגישות האחראי/ת על נושא הנגישות.
+              ניתן לפנות אליו/ה בכל שאלה, בקשה או דיווח על בעיית נגישות.
             </p>
-            
+
             <div className="bg-gold-500/10 border border-gold-500/30 rounded-xl p-6">
-              <h3 className="text-lg font-semibold text-gold-500 mb-4">פרטי יצירת קשר:</h3>
+              <h3 className="text-lg font-semibold text-gold-500 mb-4">📞 פרטי רכז/ת הנגישות:</h3>
               <div className="text-gray-300 space-y-3">
-                <p><strong className="text-white">שם:</strong> אקדמיית אליט טים לכדורסל</p>
-                <p><strong className="text-white">טלפון:</strong> <a href="tel:+972501234567" className="hover:text-gold-500 transition-colors">050-123-4567</a></p>
-                <p><strong className="text-white">אימייל:</strong> <a href="mailto:accessibility@eliteteam.co.il" className="hover:text-gold-500 transition-colors">accessibility@eliteteam.co.il</a></p>
-                <p><strong className="text-white">שעות פעילות:</strong> א׳-ה׳ 09:00-18:00, ו׳ 09:00-14:00</p>
+                <p><strong className="text-white">שם:</strong> ירדן יצחקוב</p>
+                <p><strong className="text-white">תפקיד:</strong> מנכ"ל ורכז נגישות</p>
+                <p><strong className="text-white">טלפון נייד:</strong> <a href="tel:+972503388010" className="hover:text-gold-500 transition-colors">050-338-8010</a></p>
+                <p><strong className="text-white">אימייל:</strong> <a href="mailto:info@eliteteam.co.il" className="hover:text-gold-500 transition-colors">info@eliteteam.co.il</a></p>
+                <p><strong className="text-white">שעות פעילות:</strong> א׳-ה׳ 09:00-20:00, ו׳ 09:00-14:00</p>
+                <p><strong className="text-white">זמן תגובה:</strong> עד 48 שעות בימי עסקים</p>
               </div>
             </div>
 
             <p className="text-gray-300 leading-relaxed mt-4">
-              נשמח לקבל את המשוב שלך ולעזור לך לגשת לכל התכנים והשירותים שלנו.
+              <strong className="text-gold-500">לתשומת לבכם:</strong> בהתאם לחוק, כל פניה בנושא נגישות תטופל
+              במהירות וברצינות. אנו מחויבים לספק מענה מקצועי ומכבד לכל פנייה.
             </p>
           </section>
 
-          {/* Section 7 - Updates */}
+          {/* Section 7 - Physical Accessibility */}
           <section>
-            <h2 className="text-2xl font-bold text-gold-500 mb-4">7. עדכונים עתידיים</h2>
-            <p className="text-gray-300 leading-relaxed">
-              אנו מתחייבים להמשיך ולשפר את הנגישות של האתר שלנו. הצהרה זו תתעדכן 
-              באופן קבוע כדי לשקף את השיפורים שביצענו ואת המגבלות החדשות שזיהינו. 
-              אנו עוקבים אחר התפתחויות טכנולוגיות ותקני נגישות חדשים כדי להבטיח 
-              שהאתר שלנו יישאר נגיש ונוח לשימוש עבור כל המשתמשים.
+            <h2 className="text-2xl font-bold text-gold-500 mb-4">7. נגישות פיזית של מתקני האימון</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              האקדמיה מחויבת לספק שירותים נגישים גם במתקנים הפיזיים שלנו:
+            </p>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-3">🏀 אקדמיית בית ברל</h3>
+                <ul className="list-disc list-inside text-gray-300 space-y-2 mr-4">
+                  <li>חניה נגישה למוגבלים בקרבת הכניסה</li>
+                  <li>כניסה נגישה ללא מדרגות</li>
+                  <li>שירותים נגישים למוגבלים</li>
+                  <li>מעבר נוח במקלדת או בכסא גלגלים למתקני האימון</li>
+                  <li>תאורה מתאימה לכל הצרכים</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-3">🏀 אקדמיית ברנר (בית אלעזרי)</h3>
+                <ul className="list-disc list-inside text-gray-300 space-y-2 mr-4">
+                  <li>חניה נגישה למוגבלים</li>
+                  <li>כניסה נגישה עם רמפה</li>
+                  <li>שירותים נגישים</li>
+                  <li>מתקני ספורט נגישים</li>
+                  <li>צוות מאומן לסייע לאנשים עם מוגבלות</li>
+                </ul>
+              </div>
+
+              <div className="bg-navy-900/50 border border-gold-500/20 rounded-xl p-4">
+                <p className="text-gray-300 leading-relaxed">
+                  <strong className="text-gold-500">⚠️ שימו לב:</strong> מומלץ לתאם מראש הגעה
+                  עם רכז הנגישות במידה ונדרשים הסדרים מיוחדים או סיוע ייעודי.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Section 8 - Accessibility Arrangements */}
+          <section>
+            <h2 className="text-2xl font-bold text-gold-500 mb-4">8. בקשה להסדרי נגישות</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              אנו מחויבים לספק הסדרי נגישות סבירים לכל אדם עם מוגבלות המבקש להשתמש בשירותים שלנו.
+            </p>
+
+            <div className="bg-gold-500/10 border border-gold-500/30 rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-gold-500 mb-3">📝 איך לבקש הסדרי נגישות:</h3>
+              <ol className="list-decimal list-inside text-gray-300 space-y-2 mr-4">
+                <li>צרו קשר עם רכז הנגישות (פרטים למעלה)</li>
+                <li>תארו את הצורך או המגבלה</li>
+                <li>ציינו איזה שירות או פעילות אתם מעוניינים לקבל</li>
+                <li>נדון במשותף בהסדר המתאים ביותר</li>
+                <li>נישם את ההסדר תוך 30 יום (או מוקדם יותר במידת האפשר)</li>
+              </ol>
+            </div>
+
+            <p className="text-gray-300 leading-relaxed mt-4">
+              דוגמאות להסדרי נגישות שאנו מספקים: סיוע אישי באימונים, התאמת שעות אימון,
+              סיוע בהרשמה, ועוד. <strong className="text-white">אין תשלום נוסף עבור הסדרי נגישות.</strong>
             </p>
           </section>
 
-          {/* Section 8 - Legal */}
+          {/* Section 9 - Complaint Process */}
           <section>
-            <h2 className="text-2xl font-bold text-gold-500 mb-4">8. היבטים משפטיים</h2>
+            <h2 className="text-2xl font-bold text-gold-500 mb-4">9. הליך טיפול בתלונות</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              אם אינך מרוצה מהטיפול בפנייתך בנושא נגישות, זכותך להגיש תלונה:
+            </p>
+
+            <ul className="list-disc list-inside text-gray-300 space-y-2 mr-4">
+              <li><strong className="text-white">שלב 1:</strong> פנה לרכז הנגישות שלנו (פרטים למעלה)</li>
+              <li><strong className="text-white">שלב 2:</strong> אם הבעיה לא נפתרה, ניתן לפנות למשרד המשפטים - נציבות שוויון זכויות לאנשים עם מוגבלות</li>
+              <li><strong className="text-white">טלפון נציבות שוויון:</strong> <a href="tel:*9710" className="hover:text-gold-500 transition-colors">*9710</a></li>
+              <li><strong className="text-white">אתר נציבות שוויון:</strong> <a href="https://www.gov.il/he/departments/topics/equal-rights" target="_blank" rel="noopener noreferrer" className="hover:text-gold-500 transition-colors underline">gov.il/equality</a></li>
+            </ul>
+
+            <p className="text-gray-300 leading-relaxed mt-4">
+              <strong className="text-gold-500">התחייבותנו:</strong> כל תלונה תטופל בכבוד, במקצועיות ובסודיות מלאה.
+            </p>
+          </section>
+
+          {/* Section 10 - Updates */}
+          <section>
+            <h2 className="text-2xl font-bold text-gold-500 mb-4">10. עדכונים והתחייבות מתמשכת</h2>
+            <p className="text-gray-300 leading-relaxed mb-3">
+              אנו מתחייבים להמשיך ולשפר את הנגישות של האתר והשירותים שלנו:
+            </p>
+
+            <ul className="list-disc list-inside text-gray-300 space-y-2 mr-4">
+              <li>ביקורת נגישות שנתית על ידי מומחה חיצוני</li>
+              <li>עדכון הצהרה זו באופן רבעוני או בעקבות שינויים מהותיים</li>
+              <li>הדרכות צוות בנושא נגישות פעמיים בשנה</li>
+              <li>שיפורים טכנולוגיים מתמשכים</li>
+              <li>קבלת משוב מהקהילה בעלת הצרכים המיוחדים</li>
+            </ul>
+
+            <p className="text-gray-300 leading-relaxed mt-4">
+              <strong className="text-white">תאריך הצהרה זו:</strong> {new Date().toLocaleDateString('he-IL', { year: 'numeric', month: 'long', day: 'numeric' })}
+              <br />
+              <strong className="text-white">תאריך בדיקה אחרונה:</strong> {new Date().toLocaleDateString('he-IL', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          </section>
+
+          {/* Section 11 - Legal */}
+          <section>
+            <h2 className="text-2xl font-bold text-gold-500 mb-4">11. היבטים משפטיים</h2>
             <p className="text-gray-300 leading-relaxed">
-              הצהרת נגישות זו נועדה לעמוד בדרישות החוק הישראלי ובתקנים הבינלאומיים 
-              לנגישות דיגיטלית. אנו מחויבים לספק שירותים נגישים ומתאימים לכל המשתמשים, 
-              בהתאם לחוק שוויון זכויות לאנשים עם מוגבלות ולכל הדרישות החוקיות הרלוונטיות.
+              הצהרת נגישות זו נכתבה בהתאם לדרישות החוק הישראלי:
+            </p>
+
+            <ul className="list-disc list-inside text-gray-300 space-y-2 mr-4 mt-3">
+              <li><strong className="text-white">חוק שוויון זכויות לאנשים עם מוגבלות, התשנ"ח-1998</strong></li>
+              <li><strong className="text-white">תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013</strong></li>
+              <li><strong className="text-white">תקן ישראלי 5568 חלק 1 ו-2</strong> - נגישות תכנים באינטרנט</li>
+              <li><strong className="text-white">WCAG 2.1 Level AA</strong> - תקן בינלאומי לנגישות</li>
+            </ul>
+
+            <p className="text-gray-300 leading-relaxed mt-4">
+              אנו מחויבים לספק שירותים נגישים ומתאימים לכל המשתמשים בהתאם לחוק
+              ולכל הדרישות החוקיות הרלוונטיות. הפרת זכויות נגישות היא עבירה פלילית.
             </p>
           </section>
 
