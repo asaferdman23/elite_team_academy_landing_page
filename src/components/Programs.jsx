@@ -6,25 +6,25 @@ const programs = [
     id: 1,
     title: 'אקדמיית בית ברל',
     description: 'מרכז הפיתוח החדש שלנו בפנינת השרון . מתאים לשחקנים מקצועיים בלבד מגילאי 11-19 . בין השעות 9:30-12:30 בהם יקבלו 2 יחידות אימון במפגש',
-    backgroundImage: '/assets/camp.JPG'
+    backgroundImage: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760719981/DSC03068_ozxo7t.jpg'
   },
   {
     id: 2,
     title: 'אקדמיית ברנר',
     description: 'אקדמיה של השפלה ימי שבת בין השעות 10:00-13:00 לגילאי 10-17 מותאם גם עבור שחקנים וגם שחקניות בהם יהנו מיחידת פיתוח יכולות אישיות ומעטפת שלמה לאורך השנה',
-    backgroundImage: '/assets/team_work.JPEG'
+    backgroundImage: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760719980/DSC02877_iauann.jpg'
   },
   {
     id: 3,
     title: 'אימונים אישיים פרטניים',
     description: 'אימוני יכולות מבית היוצר של elite team עם צוות האימון ברחבי הארץ באיזורי ראשון לציון, תל אביב רמת גם, קרית אונו, רעננה והרצליה . חבילות אישיות מותאמות לצרכי השחקן',
-    backgroundImage: '/assets/focus.JPG'
+    backgroundImage: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760719979/DSC02895_k0bvfw.jpg'
   },
   {
     id: 4,
     title: 'מנטור 360 עם ירדן יצחקוב',
     description: 'מסלול היוקרתי ביותר בחברת elite team. מסלול ייחודי ואישי ישירות מול מנכ״ל האקדמיה המבחר בין אימוני יכולות אישיות לניתוחי וידאו, שיחות חודשיות ועבודות אישיות ביתיות מותאמות. מתאים רק לשחקנים אשר יעברו שיחת התאמה מול ירדן',
-    backgroundImage: '/assets/mike.JPEG'
+    backgroundImage: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760470953/mike_yoipdl.jpg'
   }
 ]
 
