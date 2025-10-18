@@ -73,7 +73,7 @@ const VideoModal = ({ isOpen, onClose }) => {
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                title="סרטון אימונים - אקדמיית אליט טים"
+                title="סרטון אימונים - Elite Team Academy"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

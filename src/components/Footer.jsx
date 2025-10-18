@@ -81,7 +81,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center space-y-2">
             <p className="text-white text-sm">
-              © {new Date().getFullYear()} אקדמיית אליט טים. כל הזכויות שמורות.
+              © {new Date().getFullYear()} Elite Team Academy. כל הזכויות שמורות.
             </p>
             <p className="text-white text-xs">
               Made by <a href="https://asafportfolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:text-gold-400 transition-colors">asaf.dev</a>

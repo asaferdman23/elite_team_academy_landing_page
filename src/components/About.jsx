@@ -61,7 +61,7 @@ const About = () => {
           <motion.div variants={fadeIn} className="order-first lg:order-last">
             <div className="relative">
               <img
-                src="/assets/mike.JPEG"
+                src="https://res.cloudinary.com/ddg685nfx/image/upload/v1760813823/WhatsApp_Image_2025-10-18_at_18.51.09_yeu2o7.jpg"
                 alt="מאמן ירדן יצחקוב עם שחקני כדורסל צעירים באקדמיית אליט טים"
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />

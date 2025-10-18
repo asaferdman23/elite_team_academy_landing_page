@@ -25,7 +25,7 @@ const TermsOfService = () => {
           <section>
             <h2 className="text-2xl font-bold text-gold-500 mb-4">1. כללי</h2>
             <p className="text-gray-300 leading-relaxed">
-              ברוכים הבאים לאתר אקדמיית אליט טים לכדורסל ("האתר", "האקדמיה").
+              ברוכים הבאים לאתר Elite Team Academy לכדורסל (&quot;האתר&quot;, &quot;האקדמיה&quot;).
               השימוש באתר זה כפוף לתנאי שימוש אלו. על ידי גלישה, רישום או שימוש בשירותי האתר,
               הנך מאשר שקראת, הבנת והסכמת לתנאים אלו. אם אינך מסכים לתנאים, אנא הימנע משימוש באתר.
             </p>
@@ -35,7 +35,7 @@ const TermsOfService = () => {
           <section>
             <h2 className="text-2xl font-bold text-gold-500 mb-4">2. שירותי האקדמיה</h2>
             <p className="text-gray-300 leading-relaxed">
-              אקדמיית אליט טים מספקת שירותי אימון כדורסל לילדים ובני נוער בגילאים 5-18.
+              Elite Team Academy מספקת שירותי אימון כדורסל לילדים ובני נוער בגילאים 5-18.
               השירותים כוללים אימונים קבוצתיים, אימונים אישיים, מחנות אימונים, וכל פעילות
               הקשורה לאימון כדורסל כפי שיפורסם מעת לעת באתר או בערוצי התקשורת שלנו.
             </p>
@@ -109,7 +109,7 @@ const TermsOfService = () => {
             <h2 className="text-2xl font-bold text-gold-500 mb-4">8. קניין רוחני</h2>
             <p className="text-gray-300 leading-relaxed">
               כל התכנים באתר, לרבות טקסטים, תמונות, לוגו, סרטונים, עיצובים וקוד,
-              הם רכושה הבלעדי של אקדמיית אליט טים ומוגנים על פי דיני זכויות יוצרים וקניין רוחני.
+              הם רכושה הבלעדי של Elite Team Academy ומוגנים על פי דיני זכויות יוצרים וקניין רוחני.
               אין להעתיק, לשכפל, להפיץ או לעשות שימוש מסחרי בתכנים ללא אישור בכתב מהאקדמיה.
             </p>
           </section>
@@ -171,7 +171,7 @@ const TermsOfService = () => {
               לשאלות או בירורים בנוגע לתנאי השימוש, ניתן ליצור איתנו קשר:
             </p>
             <div className="mt-4 text-gray-300 space-y-2">
-              <p><strong className="text-gold-500">שם:</strong> אקדמיית אליט טים לכדורסל</p>
+              <p><strong className="text-gold-500">שם:</strong> Elite Team Academy לכדורסל</p>
               <p><strong className="text-gold-500">טלפון:</strong> <a href="tel:+972501234567" className="hover:text-gold-500 transition-colors">050-123-4567</a></p>
               <p><strong className="text-gold-500">אימייל:</strong> <a href="mailto:info@eliteteam.co.il" className="hover:text-gold-500 transition-colors">info@eliteteam.co.il</a></p>
             </div>

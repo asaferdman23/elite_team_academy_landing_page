@@ -14,6 +14,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import AccessibilityStatement from './pages/AccessibilityStatement'
 import SiteRegulations from './pages/SiteRegulations'
+import ProgramDetail from './pages/ProgramDetail'
 
 function App() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -38,6 +39,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/programs/:slug" element={<ProgramDetail />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/accessibility-statement" element={<AccessibilityStatement />} />

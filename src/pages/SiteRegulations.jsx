@@ -26,7 +26,7 @@ const SiteRegulations = () => {
             <h2 className="text-2xl font-bold text-gold-500 mb-4">מבוא</h2>
             <p className="text-gray-300 leading-relaxed">
               תקנון זה מסדיר את מערכת היחסים בין המשתמשים והגולשים באתר
-              לבין אקדמיית אליט טים לכדורסל ("האקדמיה", "אנחנו").
+              לבין Elite Team Academy לכדורסל (&quot;האקדמיה&quot;, &quot;אנחנו&quot;).
               השימוש באתר מהווה הסכמה מלאה לתנאים המפורטים בתקנון זה.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
@@ -39,8 +39,8 @@ const SiteRegulations = () => {
           <section>
             <h2 className="text-2xl font-bold text-gold-500 mb-4">1. הגדרות</h2>
             <ul className="list-disc list-inside text-gray-300 space-y-2 mr-4">
-              <li><strong className="text-white">"האתר"</strong> - אתר אקדמיית אליט טים הממוקם בכתובת eliteteamacademy.com</li>
-              <li><strong className="text-white">"האקדמיה"</strong> - אקדמיית אליט טים לכדורסל</li>
+              <li><strong className="text-white">"האתר"</strong> - אתר Elite Team Academy הממוקם בכתובת eliteteamacademy.com</li>
+              <li><strong className="text-white">"האקדמיה"</strong> - Elite Team Academy לכדורסל</li>
               <li><strong className="text-white">"משתמש" / "גולש"</strong> - כל אדם הגולש או משתמש באתר</li>
               <li><strong className="text-white">"שירותים"</strong> - כל שירותי האימון והתוכניות המוצעות על ידי האקדמיה</li>
               <li><strong className="text-white">"תוכן"</strong> - כל המידע, הטקסטים, התמונות, הסרטונים והחומרים באתר</li>
@@ -217,7 +217,7 @@ const SiteRegulations = () => {
             </p>
             <div className="bg-gold-500/10 border border-gold-500/30 rounded-xl p-6">
               <div className="text-gray-300 space-y-3">
-                <p><strong className="text-white">שם:</strong> אקדמיית אליט טים לכדורסל</p>
+                <p><strong className="text-white">שם:</strong> Elite Team Academy לכדורסל</p>
                 <p><strong className="text-white">טלפון:</strong> <a href="tel:+972503388010" className="hover:text-gold-500 transition-colors">050-338-8010</a></p>
                 <p><strong className="text-white">אימייל:</strong> <a href="mailto:info@eliteteam.co.il" className="hover:text-gold-500 transition-colors">info@eliteteam.co.il</a></p>
                 <p><strong className="text-white">שעות פעילות:</strong> א׳-ה׳ 09:00-20:00, ו׳ 09:00-14:00</p>

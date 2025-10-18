@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-2xl font-bold text-gold-500 mb-4">1. כללי</h2>
             <p className="text-gray-300 leading-relaxed">
-              אקדמיית אליט טים לכדורסל ("האקדמיה", "אנחנו") מכבדת את פרטיות המשתמשים והלקוחות שלה.
+              Elite Team Academy לכדורסל ("האקדמיה", "אנחנו") מכבדת את פרטיות המשתמשים והלקוחות שלה.
               מדיניות פרטיות זו מסבירה כיצד אנו אוספים, משתמשים, שומרים ומגנים על המידע האישי שלך
               כאשר אתה משתמש באתר שלנו או נרשם לשירותים שלנו.
             </p>
@@ -143,7 +143,7 @@ const PrivacyPolicy = () => {
               ניתן ליצור איתנו קשר:
             </p>
             <div className="mt-4 text-gray-300 space-y-2">
-              <p><strong className="text-gold-500">שם:</strong> אקדמיית אליט טים לכדורסל</p>
+              <p><strong className="text-gold-500">שם:</strong> Elite Team Academy לכדורסל</p>
               <p><strong className="text-gold-500">טלפון:</strong> <a href="tel:+972501234567" className="hover:text-gold-500 transition-colors">050-123-4567</a></p>
               <p><strong className="text-gold-500">אימייל:</strong> <a href="mailto:info@eliteteam.co.il" className="hover:text-gold-500 transition-colors">info@eliteteam.co.il</a></p>
             </div>

@@ -39,11 +39,11 @@ const CTA = () => {
         className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 text-center"
       >
         <h2 className="text-4xl sm:text-6xl font-extrabold text-white mb-6 leading-tight">
-          הצטרפו ל<span className="text-gold-500">אליט</span>
+          הצטרפו ל<span className="text-gold-500">Elite</span>
         </h2>
 
         <p className="text-xl sm:text-2xl text-gray-200 mb-10 leading-relaxed">
-          הירשמו לאימון ניסיון חינם השבת וחוו את ההבדל של אקדמיית אליט טים.
+          הירשמו לאימון ניסיון חינם השבת וחוו את ההבדל של Elite Team Academy.
         </p>
 
         <motion.a
