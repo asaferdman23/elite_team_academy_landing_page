@@ -81,7 +81,7 @@ const teamPlayers = [
   },
   {
     id: 10,
-    name: 'דקארי פארקר',
+    name: 'דקארי טאקר',
     position: 'פורוורד',
     image: 'https://res.cloudinary.com/ddg685nfx/image/upload/v1760717860/%D7%93%D7%90%D7%A7%D7%A8%D7%99_%D7%98%D7%90%D7%A7%D7%A8_yxm3hk.jpg',
     featured: false

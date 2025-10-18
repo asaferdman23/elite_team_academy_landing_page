@@ -72,12 +72,20 @@ export const submitToFixDigital = async (leadData) => {
       },
     })
 
+    // Read the response body only once
+    const responseText = await response.text()
+
     if (!response.ok) {
-      const errorText = await response.text()
-      throw new Error(`Fix Digital API error: ${response.status} - ${errorText}`)
+      throw new Error(`Fix Digital API error: ${response.status} - ${responseText}`)
     }
 
-    const result = await response.json().catch(() => response.text())
+    // Try to parse as JSON, otherwise use the raw text
+    let result
+    try {
+      result = JSON.parse(responseText)
+    } catch {
+      result = responseText
+    }
 
     return {
       success: true,
